@@ -6,7 +6,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import UseQuery from './UseQuery';
 import UseMutation from './UseMutation';
 import Header from './Header';
-// import UseEffect from './UseEffect';
+import UseEffect from './UseEffect';
 
 const queryClient = new QueryClient(); // Создание нового экземпляра QueryClient для использования в приложении React   
 
@@ -17,7 +17,7 @@ function App() {
       <Header />
       <div className="mt-6">
         <UseQuery />
-        {/* <UseEffect /> */}
+        <UseEffect />
         <UseMutation />
       </div>
       </div>
