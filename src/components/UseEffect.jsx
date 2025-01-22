@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 // useEffect — это хук, который выполняет побочные эффекты в компонентах React
 
 // Компонент для использования useEffect
-function UseEffect() {
+export default function UseEffect() {
   const [data, setData] = useState([]); // Состояние для хранения данных
   const [error, setError] = useState(null); // Состояние для обработки ошибок
   const [isLoading, setIsLoading] = useState(true); // Состояние загрузки
@@ -50,5 +50,3 @@ function UseEffect() {
     </div>
   );
 }
-
-export default UseEffect;

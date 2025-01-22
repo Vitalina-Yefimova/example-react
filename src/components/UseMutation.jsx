@@ -65,7 +65,7 @@ const deleteUser = async (userId) => {
 };
 
 // Компонент с формами для добавления, обновления, удаления пользователей
-function UseMutation() {
+export default function UseMutation() {
 
   // Состояния для полей формы
   const [name, setName] = useState('');
@@ -259,5 +259,3 @@ function UseMutation() {
     </div>
   );
 }
-
-export default UseMutation;

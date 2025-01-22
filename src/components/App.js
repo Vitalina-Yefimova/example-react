@@ -10,7 +10,7 @@ import UseEffect from './UseEffect';
 
 const queryClient = new QueryClient(); // Создание нового экземпляра QueryClient для использования в приложении React   
 
-function App() {
+export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-800 text-white">
@@ -24,5 +24,3 @@ function App() {
        </QueryClientProvider>
       );
 }
-
-export default App;

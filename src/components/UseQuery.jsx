@@ -13,7 +13,7 @@ const fetchUsers = async () => {
 };
 
 // Компонент для использования useQuery
-function UseQuery() {
+export default function UseQuery() {
   const { data, error, isLoading } = useQuery('users', fetchUsers); // users - уникальный ключ для кэширования данных
 
   // Статус загрузки
@@ -44,5 +44,3 @@ function UseQuery() {
 
 // key — это специальный атрибут в React, который используется при рендеринге списков. 
 // Он помогает React правильно отслеживать и обновлять элементы списка, когда состояние компонента изменяется.
-
-export default UseQuery;

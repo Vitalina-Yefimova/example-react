@@ -1,6 +1,6 @@
 import logo from "../logo.svg";
 
-function Header() {
+export default function Header() {
   return (
     <header className="flex flex-col items-center justify-center text-center">
       <img
@@ -16,5 +16,3 @@ function Header() {
       </header>
   )
 }
-
-export default Header;
